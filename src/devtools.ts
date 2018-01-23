@@ -68,7 +68,7 @@ export class StoreDevtools implements Observer<any> {
 
     this.stateSubscription = liftedStateSubscription;
     this.dispatcher = dispatcher;
-    this.liftedState = liftedState$;
+    this.liftedState = liftedState$ as any;
     this.state = state$;
   }
 
